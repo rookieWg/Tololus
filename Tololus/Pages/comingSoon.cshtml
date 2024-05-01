@@ -1,0 +1,74 @@
+﻿@page
+@model Tololus.Pages.comingSoonModel
+@{
+     Layout = "_Layout";
+    ViewData["Title"] = "Coming Soon | Tololus";
+}
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="IdrisBalaUsman" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Idri Bala Usman" />
+
+<link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+
+
+<div class="uc__wrapper">
+    <div class="uc__details">
+        <h1 class="title">Coming Soon!</h1>
+        <h3 class="intro">
+            We are working hard to give you a better experience.
+        </h3>
+        <p class="uc__description">
+            We are working hard on it & the site may go live very soon. We promise, it will be worth the wait!
+        </p>
+
+        	<!-- Boostrap Success & Error Message  -->
+									@if(Model.errorMessage.Length > 0)
+									{
+										<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+
+										<strong>@Model.errorMessage</strong>
+										<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+
+										</div>
+									} 
+									else if(Model.successMessage.Length > 0)
+									 {
+										<div class='alert alert-success alert-dismissible fade show' role='alert'>
+
+										<strong>@Model.successMessage</strong>
+										<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+
+										</div>
+									 }
+
+        <div class="uc__subscribe">
+            <h3>Get Notified When We Go Live</h3>
+            <div class="uc__form">
+                <form method="post" asp-page="comingSoon">
+                    <input type="text"  class="text" placeholder="Name.." asp-for="comingSoon.Name" >
+                    <span asp-validation-for="comingSoon.Name" class="text-danger"></span>
+
+                    <input type="email"  class="email" placeholder="Email Address.." asp-for="comingSoon.EmailAddress" >
+                    <span asp-validation-for="comingSoon.EmailAddress" class="text-danger"></span>
+
+                    <input type="submit" class="submit" value="Get Notified">
+@*                    <input type="button" class="submit" onclick="window.location.href='index'" width="6em" value=" Homepage" style="margin-left: 50%; margin-top:-13%">
+*@
+
+                </form>                
+            </div>
+
+           
+        </div>
+
+    </div>
+
+    <div class="uc__art">
+        <img src="under_construction.svg" alt="">
+    </div>
+
+</div> 
+

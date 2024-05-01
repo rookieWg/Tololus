@@ -1,0 +1,56 @@
+﻿@page
+@model Tololus.Pages.SuccessModel
+@{
+    Layout = "";
+    ViewData["Title"] = "Form | Success";
+}
+
+<html>
+    <head>
+        	<!-- Stylesheets
+	============================================= -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+   <link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="bodySuccess">
+
+    <div >
+	<a href="./" class="standard-logo"><img src="business/images/logo-dark.png" alt="Canvas Logo"></a>
+						
+	</div><!-- #logo end -->
+
+
+
+<div class="div uc__form uc___form input">
+
+  <strong>  <h2 class="success-text">Submitted Successfully!</h2></strong>
+
+    <div class='alert alert-success alert-dismissible fade show' role='alert' align="justify" >
+          Thanks for contacting us. Your form was received successfully. This email is checked regularly during business hours (9-5 WAT). We’ll get back to you as soon as possible, usually within a 
+   few hours.
+
+   <button type='button' class='btn-close' onclick="myDialog.close()" data-bs-dismiss='alert' aria-label='Close'></button>
+
+</div>
+   
+    <input type="button" class="submit" onclick="window.location.href='./'" width="6em" value=" Close" style="margin-left: -66%; margin-top:0px">
+    <input type="button" class="submit" onclick="window.location.href='./#Contact'" width="6em" value=" Submit Another Query" style="margin-left: 40%; margin-top:-60px">
+ 
+
+</div>
+
+
+
+
+    </body>
+</html>	
+
+
+
+
+
+
+ 

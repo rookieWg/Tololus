@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Tololus</title>
+	 <link rel="icon" type="image/x-icon" href="~/logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="IdrisBalaUsman" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Idri Bala Usman" />
+
+
+
+
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<!-- Business Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="business/business.css" type="text/css" />
+	<link rel="stylesheet" href="business/css/fonts.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+
+	<link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+	<!-- Theme Color
+	============================================= -->
+	<link rel="stylesheet" href="css/colors.php?color=00BED7" type="text/css" />
+
+
+
+</head>
+<body class="stretched">
+
+	<!-- Header
+		============================================= -->
+	<header id="header" class="full-header transparent-header" data-sticky-class="not-dark">
+		<div id="header-wrap">
+			<div class="container">
+				<div class="header-row">
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="./" class="standard-logo" data-dark-logo="business/images/logo-dark.png"><img src="business/images/logo.png" alt="tololus Logo"></a>
+						<a href="./" class="retina-logo" data-dark-logo="business/images/logo-dark@2x.png"><img src="business/images/logo@2x.png" alt="tololus Logo"></a>
+					</div><!-- #logo end -->
+
+										
+
+					<div id="primary-menu-trigger">
+						<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+					</div>
+
+					<!-- Primary Navigation
+					============================================= -->
+
+					<nav class="primary-menu not-dark">
+
+						<ul class="menu-container">
+							<li class="menu-item active"><a class="menu-link" href="./"><div>Home</div></a></li>
+							<li class="menu-item"><a class="menu-link" data-scrollto="#Services" data-offset="0" class="dark one-page-arrow" href="#Services"><div>Services  </div></a></li>
+							<li class="menu-item"><a class="menu-link" data-scrollto="#About" data-offset="0" class="dark one-page-arrow" href="#About"><div>About</div></a></li>
+							<li class="menu-item"><a class="menu-link" data-scrollto="#Portfolio" data-offset="0" class="dark one-page-arrow" href="#Portfolio"><div>Portfolio </div></a></li>
+							<li class="menu-item"><a class="menu-link" data-scrollto="#Contact" data-offset="0" class="dark one-page-arrow" href="#Contact"><div>Contact </div></a></li>
+
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+				
+					<form class="top-search-form" action="search" method="get">
+						<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="on">
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<div class="header-wrap-clone"></div>
+	</header><!-- #header end -->
+
+
+
+    <div >
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    
+
+		<!-- Footer -->
+	<!-- Footer
+	============================================= -->
+	<footer id="footer" class="border-0" style="padding: 30px 0; background-color: #ccc color: #000;">
+		<div class="container clearfix">
+			<!-- Footer Widgets
+			============================================= -->
+			<div class="footer-widgets-wrap">
+
+				<div class="row col-mb-50">
+					<div class="col-md-3">
+						<a href="./"> <img src="business/images/logo@2x.png" alt="Image" height="100" style="margin-top: -30px"></a>
+					</div>
+
+					<div class="col-md-9">
+
+						<div class="row col-mb-30">
+							<div class="col-sm-6 col-lg-3">
+								<div class="widget widget_links widget-li-noicon clearfix">
+									<h4>Company</h4>
+									<ul>
+										<li><a href="#tostom">Tostom</a></li>
+										<li><a href="#tmed">T-Med Healthcare</a></li>
+										<li><a href="#edu">TGR Education Consults</a></li>
+										<li><a href="#nature">Nature Delight</a></li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="widget widget_links widget-li-noicon clearfix">
+									<h4>Community</h4>
+									<ul>
+										<li><a href="./">Documentation</a></li>
+										<li><a href="./">Feedback</a></li>
+
+										<li><a href="./">Support Forums</a></li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="widget widget_links widget-li-noicon clearfix">
+									<h4>Resources</h4>
+									<ul>
+										
+										<li><a  href="./">Tolo'lus</a></li>
+										<li><a href="#About">About</a></li>
+										<li><a href="#Services">Services</a></li>
+										<li><a href="#Portfolio">Portfolio</a></li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="widget widget_links widget-li-noicon clearfix">
+									<h4>Contact</h4>
+									<ul>
+										<li><a href="#">Do have any question?</a></li>
+										<li><a href="#">Phone</a></li>
+										<li><a href="tel:+2349064951938">+234 (0) 916 495 1938</a></li>
+										<li><a href="#">Email</a></li>
+										<li><a href="mailto:usmanbalaidriss@gmail.com,info@tololus.com">info@tololus.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="line line-sm"></div>
+
+						<div class="row justify-content-between col-mb-30">
+							<div class="col-12 col-md-auto text-center text-md-start">
+								<small class="fw-light" style="color: #2f2f2f">Copyrights &copy; @DateTime.Now.Year - All Rights Reserved by Tololus Global Resources.</small>
+							</div>
+
+							<div class="col-12 col-md-auto text-center text-md-end">
+								<a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-facebook">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+
+								<a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-vimeo">
+									<i class="icon-youtube"></i>
+									<i class="icon-youtube"></i>
+								</a>
+
+								<a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-instagram">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer><!-- #footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Go To Top
+	  ============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="src/jquery.shorten.js"></script>
+
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+
+		 <script>
+		$(document).ready(function () {
+
+			$(".team_content").shorten({
+				moreText: 'read more',
+				lessText: 'read less'
+			});
+
+
+			$(".team_content").shorten({
+				lessText: 'read less'
+			});
+
+			$(".team_content").shorten({ showChars: 10 });
+
+		});
+
+	</script>
+
+	<script>
+		jQuery(window).on('pluginCarouselReady', function () {
+			$('#oc-features').owlCarousel({
+				items: 1,
+				margin: 60,
+				nav: true,
+				navText: ['<i class="icon-line-arrow-left"></i>', '<i class="icon-line-arrow-right"></i>'],
+				dots: false,
+				stagePadding: 30,
+				responsive: {
+					768: { items: 2 },
+					1200: { stagePadding: 200 }
+				},
+			});
+		});
+	</script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

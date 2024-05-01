@@ -1,0 +1,40 @@
+name: Build, Publish and Deploy project to Simply
+
+on: [push]
+
+jobs:
+  build_and_deploy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0
+          
+      - name: Install dependencies
+        run: dotnet restore
+        
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish Net-Core-API.csproj --configuration Release --output ./publish --runtime win-x86 --self-contained false -p:PublishTrimmed=false -p:PublishSingleFile=false
+        
+      - name: Test with .NET
+        run: dotnet test
+
+      - name: Deploy to Simply        
+        uses: talunzhang/auto-web-deploy@v1.0.1
+        with:
+          website-name: ${{ secrets.WEBSITE_NAME }}
+          server-computer-name: ${{ secrets.SERVER_COMPUTER_NAME }}
+          server-username: ${{ secrets.SERVER_USERNAME }}
+          server-password: ${{ secrets.SERVER_PASSWORD }}
+          
+     # - name: Migrate
+      #  run: 
+     #     cd tololus
+      #    dotnet tool install --global dotnet-ef
+      #    dotnet ef database update --connection  'Data Source=SQL9001.site4now.net;Database=db_aa6158_tololus;User Id=db_aa6158_tololus_admin;Password=Tololus=0;' --context TololusContext
