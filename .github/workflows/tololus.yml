@@ -33,8 +33,8 @@ jobs:
           server-username: ${{ secrets.SERVER_USERNAME }}
           server-password: ${{ secrets.SERVER_PASSWORD }}
           
-     # - name: Migrate
-      #  run: 
-     #     cd tololus
-      #    dotnet tool install --global dotnet-ef
-      #    dotnet ef database update --connection  'Data Source=SQL9001.site4now.net;Database=db_aa6158_tololus;User Id=db_aa6158_tololus_admin;Password=Tololus=0;' --context TololusContext
+      - name: Migrate
+        run: 
+          cd tololus
+          dotnet tool install --global dotnet-ef
+          dotnet ef database update --context TololusContext --connection 'Data Source=sql5113.site4now.net;Database=db_a4765c_jamesstaff;User Id=db_a4765c_jamesstaff_admin;Password=admin@123;'
