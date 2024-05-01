@@ -34,7 +34,7 @@ jobs:
           server-password: ${{ secrets.SERVER_PASSWORD }}
           
       - name: EF Migrate
-        run:
+        run: |
           cd tololus
           dotnet tool install --global dotnet -ef
           dotnet ef database update --connection 'Data Source=sql5113.site4now.net;Database=db_a4765c_jamesstaff;User Id=db_a4765c_jamesstaff_admin;Password=admin@123;' --context TololusContext 
