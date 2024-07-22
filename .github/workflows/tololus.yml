@@ -38,4 +38,3 @@ jobs:
           cd tololus
           dotnet tool install --global dotnet-ef
           dotnet ef database update --connection ${{ secrets.connection_string }} --context TololusContext 
-          ###test publish
